@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ក្រសួងសកិកម្ម</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="logo.jfif" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+  </head>
+  <body>
+    <div class="container-fluid m-0 p-0">
+      <div class="header-images">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="activeImage">
+              <!-- Get Image form js -->
+            </div>
+            <div class="carousel-item" id="carouselItem">
+              <!-- Get Image form js -->
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menue -->
+    <div class="container menue">
+      <nav class="navbar">
+        <div class="container-fluid" id="displayMenue">
+          <!-- Get Menue From JavaScript -->
+        </div>
+      </nav>
+      <nav class="navbar float-end">
+        <div class="container-fluid">
+          <span class="navbar mb-0" id="hover"
+            >អំពីពួកយើង <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-menue">
+              <nav>
+                <div class="container-fluid d-menue" id="disdropmenue">
+                  <!-- <a href="" class="navbar">តើពួកយើងជានណា?</disdropmenuea>
+                  <a href="" class="navbar">គោលដៅ</a>
+                  <a href="" class="navbar">ចខុវិស័យ</a> -->
+                </div>
+              </nav>
+            </div>
+          </span>
+        </div>
+      </nav>
+      <nav class="nav-acound float-end">
+        <div class="container-fluid account">
+          <button class="btn btn-outline-light me-3" id="btnLoign">LOGIN</button>
+          <button class="btn btn-outline-light" id="btnSignUp">SIGNUP</button>
+          <i class="fa-regular fa-user" id="user"></i>
+          <i class="fa-solid fa-magnifying-glass" id="search"></i>
+          <div class="control-search-bar" id="searchBar">
+            <a href=""> <i style="color: black;" class="fa-solid fa-magnifying-glass"></i> </a>
+            <input id="findsomthing" class="form-control  search" type="search" placeholder="Search">
+          </div>
+        </div>
+      </nav>
+    </div>
+    <form action="" method="post">
+      <main class="mother-form" id="mainForm">
+        <div class="container-fluid main-form">
+          <form action="">
+            <div class="form">
+              <div class="information">
+                <div class="logo-form" id="logoForm">
+                  <img src="" alt="" />
+                </div>
+                <div class="thumnail" id="thumnail"></div>
+              </div>
+              <div class="surseform">
+                <div class="main-signup" id="mainSignUp"> 
+                  <div class="header">
+                    <h3>SIGNUP</h3>
+                    <button
+                      id="closeForm"
+                      type="button"
+                      class="btn btn-outline-danger float-end"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="container  controlName">
+                    <div class="Fname">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Frist Name">
+                        <label for="floatingInput">First Name</label>
+                      </div>
+                    </div>
+                    <div class="Lname">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
+                        <label for="floatingInput">Last Name</label>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="container">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="container gotoLogin">
+                      <h6>Already a member? <span id="Login">Login</span></h6>
+                    </div>
+                    <div class="contianer signup">
+                      <button type="button" class="btn btn-signup btn-primary">SIGNUP</button>
+                    </div>
+                    <div class="container sign-up-with">
+                        <h6>Or Sign Up Using</h6>
+                        <span id="geticon"> 
+                          <!-- get icon form js -->
+                        </span>
+                    </div> 
+                </div>
+                <div class="main-login" id="mainLogin">
+                  <div class="header-login">
+                    <h3>LOGIN</h3>
+                     <button type="button" class="btn btn-outline-danger closeform-login" id="closeFormLogin"><i class="fa-solid fa-xmark"></i></button>
+                   </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <span class="forGetPassWorld" id="forgetpassworld">
+                    <p>Forget password?</p>
+                  </span>
+                  <div class="container control-login">
+                    <button type="button" class="btn btn-primary btn-login">LOGIN</button>
+                  </div>
+                  <div class="container has-no-account">
+                    <h6>Has no account?<span id="gotoSignUp"> SignUP</span></h6>
+                  </div>
+                  <div class="container sign-up-with">
+                    <h6>Or Sign Up Using</h6>
+                    <span id="geticonLogin"> 
+                      <!--get icon form js -->
+                    </span>
+                 </div> 
+                </div> 
+            </div>
+          </form>
+        </div>
+      </main>
+    </form>
+    <!-- content -->
+  <div class="container-fluid main-container">
+    <div class="new-lay p-0">
+
+        <div class="vdo-box" id="vodBox">
+          <div class="display-vdo">
+            <video controls src="vod1.mp4"></video>
+          </div>
+          <div class="gif-image">
+            <img src="gifiamgefrombsusiness.gif" alt="">
+          </div>
+        </div>
+
+        <div class="thumbnail-vdo-box">
+           <header class="header-caption">
+            <h5>
+              ដាំបន្លែចិញ្ចឹមសត្វជុំវិញផ្ទះ ចំណូលជិត១០០$/ថ្ងៃ | កម្មវិធីកសិកម្ម
+            </h5>
+           </header>
+             <div class="image-icon" id="imageIcon">
+                <!-- Get Image with Kink From js -->
+             </div>
+             <div class="catecary-vod">
+                 <!-- Get My Own API From Js -->
+             </div>
+             <div class="images-under-vdo">
+              <img src="wooribank.gif" alt="">
+             </div>
+        </div>
+   
+    </div>
+  </div>
+  <div class="container-fluid p-0" style="margin-top: 80px;">
+     <div class="container p-0">
+      <img src="wifi.jfif" alt="">
+     </div>
+     <div class="container p-0 mt-3">
+      <img src="wooribank.gif" alt="">
+     </div>
+  </div>
+
+
+
+  <div class="container p-0  mian-contenct-under-vdo">
+      <!-- get element from javascript -->
+  </div>
+    <!-- Good Food -->
+  <div class="container-fluid mainintro-good-food">
+  <div class="container introduntion-good-food p-5 ">
+      <header>
+        <div class="text">
+          <h1 id="goodFoodHeader">
+            <!--get header text from javascript-->
+          </h1>        
+          <p class="text-under-header" id="textUnderHeader"> <!-- get cation from javaScript --></p>  
+        </div>
+      </header>
+      <div class="container-fluid p-0 main-intro ">
+        <div class="icon-box">
+            <div class="stall-icon">
+              <a href="#"><i class="fa-solid fa-shop"></i></a>
+              <p>ទីផ្សារសម្រាប់ធ្វើការទិញនិងលក់ផលិតផលគ្មានជាតិគីមី</p>
+            </div>
+            <div class="stall-icon">
+              <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
+              <p> 
+                ទំនាក់ទំនងសាកសួរព័ត៍មាន
+              </p>
+            </div>
+            <div class="stall-icon">
+              <a href="#"><i class="fa-solid fa-users"></i></a>
+              <p>
+                សហគម៏ចំណីអាហារគ្មានជាតិគីមី
+              </p>
+            </div>
+            <div class="stall-icon">
+              <a href="#"><i class="fa-solid fa-message"></i></a>
+              <p>បញ្ចេញមតិ</p>
+            </div>
+        </div>
+        <div class="display-box">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="vilageble.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="yellowi.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="gilrwithvi.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+    <!-- --------------------Technical---------------------- -->
+    <div class="container-fluid main-technical">
+      <div class="container technical">
+        <div class="technical-text-box">
+           <h3 class="technical-header-text">
+            <i class="fa-brands fa-pagelines"></i>
+            បច្ចេកទេសថ្មី
+           </h3>
+           <h1 class="big-text">
+            Dron បាញ់ថ្នាំដោយស្វ័យប្រវត្តិ
+           </h1>
+           <div class="cpation-text">
+             <!-- get text form js -->
+           </div>
+            <div class="buy-dron">
+              <a href="#">Buy Dron <i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#">Abuot Dron <i class="fa-solid fa-address-card"></i></a>
+            </div>
+            <p class="last-caption">
+                <!-- get text form js  -->
+            </p>
+        </div>
+        <div class="technical-image-box">
+            <img src="drone_green.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------end technical------------------------- -->
+    <!-- about content -->
+    <div class="container-fluid main-about-content">
+      <div class="container about-content">
+        <h5 class="about-header-txt">
+          <!-- get text form js -->
+        </h5> 
+        <h1 class="about-big-text">
+          <!-- get text from js -->
+        </h1>
+        <div class="main-small-box" id="mainStallImgaesbox">
+             <div class="about-smal-box">
+              <a href="https://www.flaticon.com/free-icons/cow" title="cow icons"><img src="cowcolor.png" alt=""></a>
+               <p>ការចិញ្ចឹមសត្វ</p> 
+            </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="vedio-under-icon">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="macin2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="RIceHarvester.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="machin3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- --------------------- end about content ------------------------- -->
+     <div class="container-fluid  project-galary">
+        
+        <div class="container scroll-box">
+            <h5 class="txt-header">
+              <i class="fa-brands fa-pagelines"></i>
+                កម្រងរូបភាព
+            </h5>
+            <h2 class="txt-big-header">
+              កម្រងរូបភាពរបស់កសិដ្ធាន  
+            </h2>
+            <div class="main-scroll">
+                 <div class="scrol-child-box">
+                 <!-- Get box and image form js -->
+                 </div>
+            </div>
+        </div>
+     </div>
+  </body>
+  <footer>
+    <div class="left-box">
+      <div class="logo-box">
+        
+      </div>
+      <h5>កម្មវិធីកសិកម្ម</h5>
+      <div class="about-us">
+        <h3>អំពីពួកយើង</h3>
+        <p>ពួកយើង គឺជាវេទិកាឌីជីថលបើកចំហសម្រាប់ខ្សែសង្វាក់តម្លៃកសិកម្ម ដោយប្រើប្រាស់ថាមពលនៃបច្ចេកវិទ្យាដែលកំពុងរីកចម្រើន និងការច្នៃប្រឌិត ដើម្បីដោះស្រាយបញ្ហាប្រឈមសំខាន់ៗក្នុងផលិតភាព និងការចែកចាយតាមរយៈគំរូចែករំលែកទិន្នន័យ។</p>
+      </div>
+    </div>
+    <div class="middle-box">
+      <h4>ប្រព័ន្ធអេកូឡូស៊ីកសិកម្ម</h4>
+      <span>&copy;Rith.com</span>
+      <p><a href="#">កសិដ្ឋានសរីរាង្គ</a></p>
+      <p><a href="#">ហាង/ហាងសរីរាង្គ</a></p>
+      <p><a href="#">វេទិកាឌីជីថល</a></p>
+      <p><a href="#">សហគមន៍កសិកម្ម</a></p>
+      <p><a href="#">វិនិយោគិន</a></p>
+    </div>
+    <div class="right-box">
+      <h4 class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        ទីតាំង
+      </h4>
+      <div class="location-Main">
+       
+      </div>
+      
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</html>

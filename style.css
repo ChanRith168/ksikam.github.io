@@ -1,0 +1,873 @@
+@import url("https://fonts.googleapis.com/css2?family=Content&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Content&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Content&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Content&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Content&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400&family=Hanuman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-menue: #008000;
+}
+.container-fluid .header-image {
+  width: 100%;
+}
+.carousel-inner img {
+  width: 100%;
+}
+
+.menue {
+  height: 50px;
+  display: flex;
+  background-color: var(--bg-menue);
+  align-items: center;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.container .navbar .container-fluid .navbar-brand {
+  color: white;
+  font-size: 14px;
+  font-family: "Odor Mean Chey", serif;
+  position: relative;
+  opacity: 0.9;
+}
+.container .navbar .container-fluid .navbar-brand:hover {
+  opacity: 2;
+}
+
+.container .navbar .container-fluid .navbar-brand::before {
+  content: "";
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+.container .navbar .container-fluid .navbar-brand:hover:before {
+  width: 100%;
+}
+
+.navbar .container-fluid .navbar {
+  color: white;
+  font-family: "Odor Mean Chey", serif;
+  font-size: 14px;
+}
+.dropdown-menue {
+  width: 200px;
+  height: 0px;
+  position: absolute;
+  top: 44px;
+  overflow: hidden;
+  background-color: var(--bg-menue);
+  transition: all 0.3s;
+}
+
+.dropdown-menue nav .d-menue .navbar {
+  text-decoration: none;
+}
+.dropdown-menue nav .d-menue .navbar:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+}
+.nav-acound .account i {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.mother-form {
+  display: none;
+}
+.main-form {
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+.form {
+  width: 970px;
+  height: 600px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.information {
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.441);
+  backdrop-filter: blur(8px);
+}
+.surseform {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+.logo-form {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #008000;
+}
+.form img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumnail {
+  text-align: center;
+  padding: 10px 15px;
+}
+.thumnail h3 {
+  color: var(--bg-menue);
+  font-size: 22px;
+  font-family: "Odor Mean Chey", serif;
+}
+.thumnail h5 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 600px;
+}
+.surseform .header {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 10px 10px;
+}
+.surseform .header .btn-outline-danger {
+  margin-top: -42px;
+}
+.surseform .header h3 {
+  color: var(--bg-menue);
+  font-family: "Roboto", sans-serif;
+}
+
+.controlName {
+  display: flex;
+  margin-top: 30px;
+}
+
+.Lname {
+  margin-left: auto;
+}
+.btn-signup {
+  width: 400px;
+  margin: auto;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.gotoLogin {
+  margin: auto;
+}
+.gotoLogin h6 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.gotoLogin h6 span {
+  color: blue;
+}
+.gotoLogin h6 span:hover {
+  text-decoration: underline blue;
+}
+.main-signup {
+  display: none;
+}
+.sign-up-with {
+  margin-top: 90px;
+  text-align: center;
+}
+.sign-up-with h6 {
+  font-size: 15px;
+  color: rgb(18, 18, 179);
+}
+.sign-up-with span i {
+  font-size: 22px;
+  color: #0883ec;
+  margin: 5px;
+}
+.sign-up-with span i:nth-child(3) {
+  color: #05a3ed;
+  background-image: linear-gradient();
+}
+.sign-up-with span i:nth-child(2) {
+  background-image: linear-gradient(180deg, #f2b707, #db3d29, #31a350, #4081ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-login {
+  padding: 20px;
+  display: none;
+}
+.header-login {
+  width: 100%;
+  text-align: center;
+  color: blue;
+  margin-bottom: 50px;
+}
+.closeform-login {
+  margin-top: -40px;
+  float: right;
+  margin-right: 10px;
+}
+
+.forGetPassWorld {
+  float: right;
+  margin-top: 20px;
+  color: blue;
+}
+.forGetPassWorld:hover p {
+  text-decoration: underline blue;
+  cursor: pointer;
+}
+.control-login {
+  display: flex;
+  justify-content: center;
+}
+.btn-login {
+  margin-top: 30px;
+  width: 400px;
+}
+.main-login .has-no-account {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.has-no-account span {
+  color: blue;
+}
+.has-no-account span:hover {
+  text-decoration: underline blue;
+}
+.control-search-bar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: black;
+  right: 0;
+  height: 38px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 0px;
+  background-color: #ffd814;
+  padding-bottom: 2px;
+  transition: all 0.4s;
+}
+.search {
+  right: 0;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.content {
+  height: 100vh;
+  margin-top: 80px;
+  position: relative;
+}
+.content .main-content main {
+  width: 70%;
+  height: 700px;
+}
+.content .main-content main article, section{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-content {
+   
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 1rem;
+}
+.content .main-content aside{
+  width: 30%;
+  height: 700px;
+  background-color: rgb(54, 131, 105);
+}
+.image-box {
+   width: 70%;
+   height: 100%;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumbnail-box {
+   width: 30%;
+   height: 100%;
+   background-color: white;
+   padding: 10px;
+}
+.thumbnail-box header {
+  width: 100%;
+  text-align: center;
+}
+.thumbnail-box header h3 {
+  font-family: 'Moul', cursive;
+  font-size: 18px;
+}
+.thumbnail-box p{
+  font-family: 'Battambang', cursive;
+  font-weight: 100;
+}
+.name-of-rice:hover {
+  color: #3366CC;
+}
+
+
+
+.new-lay {
+  width: 95%;
+  margin: auto;
+  margin-top: 100px;
+  height: 500px;
+  display: flex;
+  gap: 1rem; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.vdo-box ,.thumbnail-vdo-box {
+  width: 50%;
+  height: 100%;
+}
+.vdo-box {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.thumbnail-vdo-box {
+  padding: 15px
+}
+
+.vdo-box video {
+  border: 5px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.vdo-box img {
+  width: 100%;
+}
+.thumnail-vod-box header {
+  width: 80%;
+  height: 40px;
+}
+
+.thumbnail-vdo-box header h5 {
+  color: black;
+  font-size: 20px;
+  font-family: 'Content', cursive;
+}
+
+.image-icon {
+  width: 110px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.image-icon img {
+  width: 30px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.catecary-vod {
+  width: 100%;
+  height: 60%;
+  overflow: auto;
+}
+.main-vod-and-caption {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+.main-vod-and-caption .control-vdo {
+  width: 200px;
+  height: fit-content;
+}
+.control-vdo video {
+  width: 200px;
+}
+.caption-vdo {
+  background-color: white;
+  padding: 0px 10px;
+}
+.caption-vdo :nth-child(1) {
+  font-size: 17px;
+}
+.caption-vdo :nth-child(2) {
+  font-size: 15px;
+  color: rgb(71, 71, 71);
+  font-family: 'Roboto', sans-serif;
+}
+.caption-vdo :nth-child(3){
+  margin-top: -10px;
+  font-size: 13px;
+}
+.images-under-vdo {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #008000;
+}
+
+.images-under-vdo img {
+  width: 100%;
+}
+.header-caption {
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    font-family: 'Poppins', sans-serif,'Battambang', cursive;
+}
+.header-caption h5 {
+  line-height: 40px;
+  font-family: 'Poppins', sans-serif,'Battambang', cursive;
+}
+.mian-contenct-under-vdo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+  transition: all  0.5s;
+}
+.card-content{
+  width: 390px;
+  height: 480px;
+  margin-top: 80px;
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: all 0.2s;
+  box-shadow: 0px 0px 7px #727171;     	    
+}
+.card-content:hover {
+  transform: scale(1.01);
+}
+.image-video {
+  width: 100%;
+  height: 45%;
+}
+.image-video video {
+  width: 100%;
+}
+
+.under-thumbnail {
+  width: 100%;
+  height: 55%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.under-caption {
+  font-size: 20px;
+  line-height: 40px;
+  font-family: 'Content', cursive;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+.container img {
+  width: 100%;
+}
+.admind{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.admind img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.about :nth-child(1) {
+  color:black;
+  margin-bottom: -4px;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 10px;
+}
+.about :nth-child(2), :nth-child(3) {
+  color: grey;
+  margin-left: 10px;
+  margin-bottom: -4px;
+  font-size: 16px;
+}
+.introduntion-good-food {
+  margin-top: 200px;
+}
+.introduntion-good-food header .text {
+  width: 100%;
+  text-align: center;
+  
+}
+.introduntion-good-food header .text h1{
+  font-family: 'Hanuman', serif;
+  color:  #4CAF50;
+  
+}
+.introduntion-good-food header .text .text-under-header {
+  width: 50rem;
+  margin: auto;
+  font-family: 'Battambang', cursive;
+  color: balck;
+  font-size: 19px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.main-intro {
+  display: flex;
+  gap: 1rem;
+  margin-top: 120px;
+}
+.main-intro .icon-box,.display-box {
+  width: 50%;
+  height: 400px;
+  overflow:hidden ;
+}
+.main-intro .icon-box {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.icon-box .stall-icon {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-top: 15px;
+  gap: 1rem;
+}
+
+.icon-box :nth-child(3) {
+  margin-left: 0px;
+}
+.icon-box :nth-child(1) i {
+  color: #29A5D5;
+  font-size: 24px;
+}
+.icon-box :nth-child(2) i {
+  color: #18B000;
+  font-size: 24px;
+}
+.icon-box :nth-child(3) i {
+  color:#42B7A9;
+  font-size: 24px;
+}
+.icon-box :nth-child(4) i {
+  color: #8BD9E2;
+  font-size: 24px;
+}
+.icon-box .stall-icon p{
+  font-family: 'Battambang', cursive;
+  color: #1F1E17;
+}
+
+
+.display-box .carousel-item{
+   width: 100%;
+   height: 100%;
+}
+.display-box .carousel-item img {
+  width: 100%;
+  height: 400px;
+}
+.mainintro-good-food {
+  background-color: #E6F2E6;
+}
+
+/* technical */
+.main-technical {
+    background-color:#F9F9FB; 
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+}
+.technical {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.technical-image-box img{
+   width: 30rem;
+}
+.technical-text-box {
+  width: 700px;
+
+}
+.technical-header-text {
+  font-family: 'Bayon', sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.technical-header-text i {
+  color: #4CAF50;
+  font-size: 40px;
+}
+.big-text {
+ font-family: 'Manrope', sans-serif,'Hanuman', serif;
+ font-weight: 200; 
+}
+.cpation-text {
+  width: 500px;
+  padding: 0px 40px;
+  border-left: 5px solid #4db050;
+}
+.cpation-text p{
+  font-family: 'Hanuman', serif;
+  font-size: 17px;
+}
+.buy-dron {
+    width: 400px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    display: flex;
+    margin-top: 100px;
+    gap: 1rem;
+}
+.buy-dron a i{
+  margin-left: 15px;
+  font-size: 20px;
+  transition: all  0.3s;
+}
+.buy-dron > :nth-child(1){
+  text-decoration: none;
+  height: 70px;
+  gap:  1rem;
+  color: #727171;
+  text-align: center;
+  width: 200px;
+  padding-top: 20px;
+  transition: all 0.3s;
+}
+.buy-dron :nth-child(2) {
+  text-decoration: none;
+  height: 70px;
+  gap: 1rem;
+  color: #9f9f9f;
+  text-align: center;
+  width: 200px;
+  padding-top: 20px;
+  transition: all 0.3s;
+  border-left: 1px solid rgb(67, 67, 67);
+}
+.buy-dron :nth-child(1) i {
+  color: #4db050;
+
+}
+.buy-dron :nth-child(2) i {
+  color: #4db050;
+}
+.buy-dron :nth-child(1):hover i {
+   transform: rotate(-10deg);
+}
+.buy-dron :nth-child(2):hover i {
+   transform: scale(1.1);
+}
+.technical-text-box :nth-child(5) {
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: 'Battambang', cursive;
+  padding-right: 200px;
+}
+/* about content */
+
+.main-about-content {
+  padding-left: 100px;
+  background-color: #1F1E17;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main-about-content .about-content {
+   text-align: center;
+  color: #18B000;
+}
+.about-content h5{
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: 'Hanuman', serif;
+}
+.about-content i {
+  font-size: 30px;
+}
+.about-content .about-big-text {
+  color: white;
+  font-family: 'Hanuman', serif;
+  padding-top: 50px;
+  width: 500px;
+  margin: auto;
+}
+.main-small-box {
+  margin:auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.about-smal-box {
+  margin-top: 50px;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  background-color: #181712;
+  transition: all 0.45s;
+  border-bottom: 3px solid #181712;
+  text-align: center;
+}
+.about-smal-box:hover {
+  border-bottom: 3px solid #4CAF50;
+}
+.about-smal-box {
+  color: #4CAF50;
+  font-size: 80px;
+}
+.about-smal-box a img {
+  width: 90px;
+}
+.about-smal-box :nth-child(2) {
+  font-size: 20px;
+  color: white;
+  font-family: 'Hanuman', serif;
+  transition: all 0.2s;
+}
+.about-smal-box :nth-child(2):hover{
+  color: #4CAF50;
+}
+.vedio-under-icon h1 {
+  color: white;
+}
+.vedio-under-icon {
+  margin: auto;
+  height: 500px;
+  margin-top: 60px;
+  width: 90%;
+  /* background-color: #05a3ed; */
+}
+.vedio-under-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carouselExampleSlidesOnly {
+  width: 100%;
+  height: 100%;
+}
+.carouselExampleSlidesOnly .carousel-inner{
+  width: 100%;
+  height: 100%;
+  background-color: #db3d29;
+}
+ .carousel-item img {
+    width: 100%;
+    height: 500px;
+}
+.project-galary {
+  padding-top: 150px;
+  background-color: #FAFAFC;
+}
+.scroll-box .txt-header {
+  color: black;
+  text-decoration: underline;  
+  font-family: 'Bayon', sans-serif;
+  font-size: 25px;
+}
+.scroll-box .txt-header i {
+  color: #008000;
+  font-size: 30px;
+
+}
+.scroll-box .txt-big-header {
+  font-family: 'Hanuman', serif;
+  width: 500px;
+  font-size: 40px;
+}
+
+.main-scroll {
+  overflow: auto;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  gap: 1rem;
+
+}
+.scrol-child-box::-webkit-scrollbar {
+  display: none;
+}
+.scrol-child-box {
+  position: relative;
+  min-width: 280px;
+  height: 280px;
+  /* background-color: #f9de10; */
+  transition: all 0.5s;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+
+}
+
+.scrol-child-box:hover > .text-ab {
+  height: 280px;
+  transition: all 0.5s; 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.location-Main {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  font-size: 20px;
+}
+.location-Main:hover a {
+  color: #18B000;
+}
